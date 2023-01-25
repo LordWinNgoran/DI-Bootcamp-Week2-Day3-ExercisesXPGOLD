@@ -1,4 +1,4 @@
-/****************************Week 2 Day 4 Exercise XP***************** */
+/****************************Week 2 Day 3 Exercise XPGOLD***************** */
 
 /**
  * @author: N'GORAN Kouadio Jean Cyrille
@@ -8,24 +8,26 @@
 
 
 
-/** Exercice 1 : Divisible Par Trois */
+/** Exercise 1 : Divisible By Three */
 
 let numbers = [123, 8409, 100053, 333333333, 7]
 
-//1. Parcourez le tableau ci-dessus et déterminez si chaque nombre est divisible par trois ou non.
+//1. Loop through the array above and determine whether or not each number is divisible by three.
 
 for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 3 === 0) {
-        console.log(numbers[i] + ' est divisible par 3');
+        console.log(numbers[i] + ' is divisible by 3');
     } else {
-        console.log(numbers[i] + ' n\'est pas divisible par 3');
+        console.log(numbers[i] + ' is not divisible by 3');
     }
 }
 
-//2. Chaque fois que vous bouclez console.log true ou false.
+//2. Each time you loop console.log true or false.
+
+// Done see Question 1 in the loop for
 
 
-/** Exercice 2 : Présence */
+/** Exercise 2 : Attendance */
 
 
 let guestList = {
@@ -35,38 +37,42 @@ let guestList = {
     norman: "England",
     sam: "Argentina"
 }
+/*
+Given the object above where the key is the student’s name and the value is the country they are from.
+*/
 
-// 1.Invitez l'élève à donner son nom.
+// 1.Prompt the student for their name.
 
-let studentName = prompt("Bonjour, pourriez-vous s'il vous plaît nous donner votre nom afin que nous puissions vérifier si vous êtes sur notre liste d'invités ?");
+let studentName = prompt("Please give us your name ?");
 
-// 2.Si le nom est dans l'objet, console.log le nom de l'étudiant et le pays d'où il vient.
-//Par exemple:"Hi! I'm [name], and I'm from [country]."
-    //Astuce : Vous n'avez pas besoin d'utiliser une boucle for, recherchez simplement l'instruction if ... in
+// 2.If the name is in the object, console.log the name of the student and the country they come from
+//For example: "Hi! I'm [name], and I'm from [country]."
+    //You don’t need to use a for loop, just look up the statement if ... in
 
     if (guestList[studentName]) {
-        console.log(`Bienvenue, ${studentName} ! Vous êtes sur notre liste d'invités et vous venez de ${guestList[studentName]}.`);
+        console.log(`Hi! I'm , ${studentName} ! and I'm from ${guestList[studentName]}.`);
     }
     //Si le nom n'est pas dans l'objet, console.log :"Hi! I'm a guest."
     else {
-        console.log(`Salut, je suis un invité !`);
+        console.log(`Hi! I'm a guest.`);
     }
 
 
 
-/** Exercice 3 : Jouer Avec Les Chiffres */
+/** Exercise 3 : Playing With Numbers */
 
 let age = [20,5,12,43,98,55];
 
+/* Don’t use built-in Javascript methods to answer the following questions. 
+You have to create the logic by yourself. Use simple for loops */
+//1.  Console.log the sum of all the numbers in the age array..
 
-//1. Console.log la somme de tous les nombres dans le tableau d'âge.
-
-let totalAge = 0;
+let sumAge = 0;
 
 for (let i = 0; i < age.length; i++) {
-    totalAge += age[i];
+    sumAge += age[i];
 }
-console.log(sum);
+console.log(`The sum of age  is ${sumAge}`);
 
 //2. Console.log l'âge le plus élevé de la baie.
 
@@ -77,4 +83,4 @@ for (let i = 1; i < age.length; i++) {
         maxAge = age[i];
     }
 }
-console.log(maxAge);
+console.log(`The Max age is ${maxAge}`);
